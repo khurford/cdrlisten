@@ -12,9 +12,9 @@
 # I created this because I could not find an existing method to get CDR data into MySQL in a realtime manner.
 # 
 # I'm posting the code to hopefully save someone else the trouble.
-# You can contact me at davidcox[at]ramtex[dot]com if you have questions but 
-# I can't guarantee any answers.
-
+#
+# Contact point changed to dfcox530@gmail.com
+# Ramtex address is no longer functional
 
 
 use strict;
