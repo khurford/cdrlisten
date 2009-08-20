@@ -1,0 +1,37 @@
+http://www.pbxtech.info/definity_servers/1081-cdr_capture_via_tcp_ip_linux_host.html
+
+Original text of post to www.pbxtech.info that I used to configure the definity
+
+Here is how I got CDR billing sent via TCP/IP to my Linux host:
+
+Definity:
+
+(add an entry for your billing linux host)
+CHANGE NODE-NAMES IP
+LINUX-HOST 192.168.0.50
+
+(point your box which host and port it should send billing)
+CHANGE IP-SERVICES
+CDR1 C-LAN LINUX-HOST 50000
+
+(tell your box how to generate CDR there)
+CHANGE SYSTEM-PARAMETERS CDR
+(page-1)
+Primary Output Format: customized
+Primary Output Endpoint: CDR1
+(page-2)
+1: date
+2: space
+3: time
+4: space
+5: sec-dur
+6: space
+7: clg-num/in-tac
+8: space
+9: in-trk-code
+10: space
+11: dialed-num
+12: space
+13: code-used
+14: return
+15: line-feed
