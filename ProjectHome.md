@@ -1,0 +1,1 @@
+This is a small perl tcp listener designed to take input from a Definity G3, parse it out and store the call records in mysql so that you can design queries to monitor call usage.
